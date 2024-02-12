@@ -1,3 +1,5 @@
+import personalInfo from "@/data/personalInfo";
+
 function index() {
   return (
     <div>
@@ -8,6 +10,7 @@ function index() {
           will be live soon.
         </a>
       </h2>
+      <p>{JSON.stringify(personalInfo, null, 2)}</p>
     </div>
   );
 }

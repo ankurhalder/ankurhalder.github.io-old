@@ -1,26 +1,9 @@
-function calculateAge(dateOfBirth) {
-  const parts = dateOfBirth.split("-");
-  const dob = new Date(`${parts[2]}-${parts[1]}-${parts[0]}`);
-  const currentDate = new Date();
-  let age = currentDate.getFullYear() - dob.getFullYear();
-  const monthDiff = currentDate.getMonth() - dob.getMonth();
-  if (
-    monthDiff < 0 ||
-    (monthDiff === 0 && currentDate.getDate() < dob.getDate())
-  ) {
-    age--;
-  }
-  return age;
-}
-
-const dateOfBirth = "30-05-2001";
-
 const personalInfo = {
   name: "Ankur Halder",
   title: "Software Developer",
-  age: calculateAge(dateOfBirth),
-  dateOfBirth: dateOfBirth,
+  age: 23,
   gender: "Male",
+  dateOfBirth: "30/05/2001",
   languagesKnown: ["Bengali", "Hindi", "English"],
   address: "13R Ishan Ghosh Road, Kolkata: 700008, West Bengal, India",
   email: "ankur.halder12345@gmail.com",
