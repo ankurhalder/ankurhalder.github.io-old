@@ -4,7 +4,8 @@ function index() {
       <h1>Ankur Halder</h1>
       <h2>
         <a href="ankurhalder.netlify.app">
-          Check out my outdated portfolio for now. I am working on a new one.
+          Check out my outdated portfolio for now. I am working on a new one. It
+          will be live soon.
         </a>
       </h2>
     </div>
