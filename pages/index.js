@@ -10,7 +10,7 @@ function index() {
           will be live soon.
         </a>
       </h2>
-      <p>{JSON.stringify(personalInfo, null, 2)}</p>
+      <h3>Click the above link</h3>
     </div>
   );
 }
