@@ -346,6 +346,38 @@ const courses = [
       "Git and GitHub",
     ],
   },
+  //@ Next.js 14 & React - The Complete Guide
+  {
+    title: "Next.js 14 & React - The Complete Guide",
+    provider: "Udemy",
+    completionDate: "September 2023",
+    description:
+      "This certificate above verifies that Ankur Halder successfully completed the course Next.js 14 & React - The Complete Guide on 09/25/2023 as taught by Maximilian Schwarzmüller on Udemy.The course covers building fullstack React apps with Next.js 14, focusing on features like pre-rendering, SSR, data fetching, file-based routing, authentication, React Server Components, Client Components, and more.",
+    topics: [
+      "Building fullstack React apps with NextJS 14",
+      "App Router vs Pages Router",
+      "React Server Components",
+      "Client Components",
+      "Data fetching",
+      "Server Actions",
+      "Pre-rendering",
+      "SSR (Server-Side Rendering)",
+      "File-based routing",
+      "Authentication",
+    ],
+    certificateLink:
+      "https://www.udemy.com/certificate/UC-fc0143a4-6b19-4e07-bcee-53f7c1f9fd1d/",
+    certificateImageUrl: "/next-js-react-complete-guide-certificate.jpg",
+    skillsGained: [
+      "Next.js development",
+      "React Server Components",
+      "Client Components",
+      "Pre-rendering",
+      "SSR",
+      "Data fetching",
+      "Authentication",
+    ],
+  },
 ];
 
 export default courses;
