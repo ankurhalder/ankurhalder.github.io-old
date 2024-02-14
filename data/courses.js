@@ -48,7 +48,8 @@ const courses = [
       "Back-End Developer Capstone",
       "Programming in Python",
     ],
-    certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    certificateLink:
+      "https://coursera.org/share/2927957967a7315b351bfa6bd46a23f8",
     certificateImageUrl: "/meta-back-end-developer",
     skillsGained: [
       "Backend Development",
@@ -81,7 +82,8 @@ const courses = [
       "Programming in Python",
       "Introduction to Databases",
     ],
-    certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    certificateLink:
+      "https://coursera.org/share/5ef6a47322c1b8eebb22bd7ab3e7d524",
     certificateImageUrl: "/meta-database-engineer",
     skillsGained: [
       "Database Management",
@@ -107,7 +109,8 @@ const courses = [
       "Start the UX Design Process: Empathize, Define, and Ideate",
       "Build Wireframes and Low-Fidelity Prototypes",
     ],
-    certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    certificateLink:
+      "https://coursera.org/share/f67a6bed791511d901a8f0c82cffa946",
     certificateImageUrl: "/google-ux-design",
     skillsGained: [
       "User Experience Design",
@@ -137,7 +140,8 @@ const courses = [
       "Introduction to Software Engineering",
       "Getting Started with Git and GitHub",
     ],
-    certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    certificateLink:
+      "https://coursera.org/share/af1fbaa9ef21b87b61c7a57302c08c46",
     certificateImageUrl: "/ibm-front-end-developer",
     skillsGained: [
       "HTML",
@@ -169,7 +173,8 @@ const courses = [
       "Getting Started with Git and GitHub",
       "Application Security for Developers and DevOps Professionals",
     ],
-    certificateLink: "https://coursera.org/verify/professional-cert/ABC456",
+    certificateLink:
+      "https://coursera.org/share/ba5ff8d72ff44cb134d5bf2c75358cef",
     certificateImageUrl: "/ibm-back-end-developer",
     skillsGained: [
       "Python",
@@ -205,7 +210,8 @@ const courses = [
       "Introduction to Web Development with HTML, CSS, JavaScript",
       "Getting Started with Git and GitHub",
     ],
-    certificateLink: "https://coursera.org/verify/professional-cert/ABC789",
+    certificateLink:
+      "https://coursera.org/share/919e319973e94f8f743fd474381fe726",
     certificateImageUrl: "/ibm-full-stack-software-developer",
     skillsGained: [
       "Git (Software)",
@@ -236,7 +242,8 @@ const courses = [
       "Introduction to Software Engineering",
       "Getting Started with Git and GitHub",
     ],
-    certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    certificateLink:
+      "https://coursera.org/share/4d1514dfd624da601f6d753a6fec2746",
     certificateImageUrl:
       "/applied-software-engineering-fundamentals-certificate.jpg",
     skillsGained: [
