@@ -144,6 +144,7 @@ const courses = [
       "Front-End Development",
     ],
   },
+  //@ IBM Back-End Development
   {
     title: "IBM Back-End Development",
     provider: "Coursera",
@@ -175,6 +176,43 @@ const courses = [
       "Git",
       "GitHub",
       "Application Security",
+    ],
+  },
+  //@ IBM Full Stack Software Developer
+  {
+    title: "IBM Full Stack Software Developer",
+    provider: "Coursera",
+    completionDate: "October 2023 - February 2024",
+    description:
+      "During the IBM Full Stack Software Developer specialization, I, Ankur Halder, have mastered the latest practical skills and tools utilized by full stack developers in their daily work. This 10-course program offered by IBM provided comprehensive training on deploying and scaling applications using Cloud Native methodologies and tools such as Containers, Kubernetes, Microservices, and Serverless. Additionally, I gained proficiency in front-end development languages and tools like HTML, CSS, JavaScript, React, and Bootstrap. Through hands-on labs and projects, including a capstone, I have built a robust GitHub portfolio and acquired the expertise needed to develop Cloud Native Applications.",
+    topics: [
+      "Full Stack Cloud Development Capstone Project",
+      "Django Application Development with SQL and Databases",
+      "Developing Back-End Apps with Node.js and Express",
+      "Python for Data Science, AI & Development",
+      "Developing Front-End Apps with React",
+      "Full Stack Software Developer Assessment",
+      "Introduction to Cloud Computing",
+      "Developing AI Applications with Python and Flask",
+      "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+      "Application Development using Microservices and Serverless",
+      "Introduction to Web Development with HTML, CSS, JavaScript",
+      "Getting Started with Git and GitHub",
+    ],
+    certificateLink: "https://coursera.org/verify/professional-cert/ABC789",
+    skillsGained: [
+      "Git (Software)",
+      "Cloud Applications",
+      "HTML",
+      "Cloud Computing",
+      "Distributed Version Control (DRCS)",
+      "open source",
+      "JavaScript",
+      "Hybrid Multicloud",
+      "Devops",
+      "Cascading Style Sheets (CSS)",
+      "Iaas PaaS Saas",
+      "Cloud Native",
     ],
   },
 ];
