@@ -40,6 +40,7 @@ const projects = [
     ],
     projectLink: "https://adcomsys.uem.edu.in",
   },
+  // @ Space Otaku
   {
     logo: "/spaceotaku.png",
     title: "Space Otaku",
