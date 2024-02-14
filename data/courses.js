@@ -215,6 +215,31 @@ const courses = [
       "Cloud Native",
     ],
   },
+  //@ IBM Applied Software Engineering Fundamentals
+  {
+    title: "Applied Software Engineering Fundamentals",
+    provider: "Coursera",
+    completionDate: "December 2023 - February 2024",
+    description:
+      "During the IBM Applied Software Engineering Fundamentals specialization, I, Ankur Halder, have acquired mastery of fundamental concepts in Software Engineering. This program equipped me with knowledge of the Software Development Lifecycle (SDLC) and the roles, tools, and technologies used in software development, testing, and deployment. Through hands-on projects, I demonstrated proficiency in writing code using basic programming constructs in Python and developing, deploying, and packaging simple Python web applications. Additionally, I have effectively utilized Git and GitHub repositories and created and executed Bash and Shell scripts using basic Linux commands and terminal operations.",
+    topics: [
+      "Python for Data Science, AI & Development",
+      "Hands-on Introduction to Linux Commands and Shell Scripting",
+      "Developing AI Applications with Python and Flask",
+      "Introduction to Software Engineering",
+      "Getting Started with Git and GitHub",
+    ],
+    certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    certificateImageUrl:
+      "/applied-software-engineering-fundamentals-certificate.jpg",
+    skillsGained: [
+      "Software Design and Architecture",
+      "Python Programming",
+      "Git and GitHub",
+      "Software Development Lifecycle (SDLC)",
+      "Linux",
+    ],
+  },
 ];
 
 export default courses;
