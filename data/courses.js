@@ -113,6 +113,37 @@ const courses = [
       "Figma",
     ],
   },
+  //@ IBM Front-End Developer
+  {
+    title: "IBM Front-End Developer",
+    provider: "Coursera",
+    completionDate: "November 2023 - February 2024",
+    description:
+      "Upon successfully completing the IBM Front-End Developer specialization, I, Ankur Halder, have acquired mastery of practical skills and tools utilized by front-end developers in their daily work. Throughout this 11-course program developed by IBM, I delved into developing web pages using HTML, CSS, JavaScript, and React, while also applying essential user interface and user experience (UI/UX) principles and best practices. Moreover, I honed my ability to manage code effectively using GitHub repositories and branches. Through hands-on labs and projects, I built a comprehensive portfolio to demonstrate my expertise and readiness for professional front-end development roles.",
+    topics: [
+      "Introduction to HTML, CSS, & JavaScript",
+      "Get Started with Cloud Native, DevOps, Agile, and NoSQL",
+      "Front-End Development Capstone Project",
+      "Developing Websites and Front-Ends with Bootstrap",
+      "Developing Front-End Apps with React",
+      "Designing User Interfaces and Experiences (UI/UX)",
+      "Software Developer Career Guide and Interview Preparation",
+      "Getting Started with Front-End and Web Development",
+      "Intermediate Web and Front-End Development",
+      "Introduction to Software Engineering",
+      "Getting Started with Git and GitHub",
+    ],
+    certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    skillsGained: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "UI/UX Design",
+      "GitHub",
+      "Front-End Development",
+    ],
+  },
 ];
 
 export default courses;
