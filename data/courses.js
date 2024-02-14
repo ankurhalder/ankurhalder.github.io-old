@@ -61,6 +61,33 @@ const courses = [
       "Django",
     ],
   },
+  //@ Meta Database Engineer
+  {
+    title: "Meta Database Engineer",
+    provider: "Coursera",
+    completionDate: "August 2023 - February 2024",
+    description:
+      "Upon successful completion of the Meta Database Engineer program, I, Ankur Halder, have gained proficiency in SQL syntax and learned how to interact with databases effectively. This 8-course program equipped me with skills to create, manage, and optimize databases, write database-driven applications in Python, and develop a solid understanding of advanced data modeling concepts. With hands-on experience and a portfolio showcasing my expertise, I am well-prepared to contribute to database management and development projects.",
+    topics: [
+      "Database Engineer Capstone",
+      "Version Control",
+      "Advanced Data Modeling",
+      "Database Structures and Management with MySQL",
+      "Advanced MySQL Topics",
+      "Coding Interview Preparation",
+      "Database Clients",
+      "Programming in Python",
+      "Introduction to Databases",
+    ],
+    certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    skillsGained: [
+      "Database Management",
+      "SQL Syntax",
+      "Python",
+      "Database Administration",
+      "MySQL",
+    ],
+  },
 ];
 
 export default courses;
