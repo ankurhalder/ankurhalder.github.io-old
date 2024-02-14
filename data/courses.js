@@ -88,6 +88,31 @@ const courses = [
       "MySQL",
     ],
   },
+  //@ Google UX Design
+  {
+    title: "Google UX Design",
+    provider: "Coursera",
+    completionDate: "August 2023 - February 2024",
+    description:
+      "Successfully completing the Google UX Design specialization, I, Ankur Halder, gained comprehensive knowledge and practical skills in user experience (UX) design. Through this 7-course program developed by Google, I learned to follow the design process: empathizing with users, defining pain points, ideating solutions, creating wireframes and prototypes, and testing and iterating on designs. Additionally, I acquired foundational UX research skills, including planning and conducting research studies, as well as synthesizing research results. With hands-on experience and a portfolio showcasing my expertise, I am well-prepared for introductory-level roles in UX design.",
+    topics: [
+      "Create High-Fidelity Designs and Prototypes in Figma",
+      "Conduct UX Research and Test Early Concepts",
+      "Design a User Experience for Social Good & Prepare for Jobs",
+      "Build Dynamic User Interfaces (UI) for Websites",
+      "Foundations of User Experience (UX) Design",
+      "Start the UX Design Process: Empathize, Define, and Ideate",
+      "Build Wireframes and Low-Fidelity Prototypes",
+    ],
+    certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    skillsGained: [
+      "User Experience Design",
+      "UX Research",
+      "Wireframing",
+      "Prototyping",
+      "Figma",
+    ],
+  },
 ];
 
 export default courses;
