@@ -1,6 +1,6 @@
 const courses = [
   {
-    // Meta Front-End Developer
+    //@ Meta Front-End Developer
     title: "Meta Front-End Developer",
     provider: "Coursera",
     completionDate: "January 2023 - August 2023",
@@ -27,6 +27,38 @@ const courses = [
       "React.js",
       "Version Control",
       "UX/UI Design",
+    ],
+  },
+  //@ Meta Back-End Developer
+  {
+    title: "Meta Back-End Developer",
+    provider: "Coursera",
+    completionDate: "June 2023 - February 2024",
+    description:
+      "Successfully completing the Meta Back-End Developer program, I, Ankur Halder, acquired the technical skills required to become a qualified back-end developer. Through this 9-course program, I gained expertise in programming systems including Python Syntax, Linux commands, Git, SQL, version control, cloud hosting, APIs, JSON, XML, and more. With hands-on experience and a portfolio showcasing my skills, I am well-prepared for interviews and ready to confidently use code to solve problems.",
+    topics: [
+      "Introduction to Databases for Back-End Development",
+      "Version Control",
+      "The Full Stack",
+      "Introduction to Back-End Development",
+      "APIs",
+      "Coding Interview Preparation",
+      "Django Web Framework",
+      "Back-End Developer Capstone",
+      "Programming in Python",
+    ],
+    certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    skillsGained: [
+      "Backend Development",
+      "Python",
+      "Linux",
+      "Git",
+      "SQL",
+      "Cloud Hosting",
+      "APIs",
+      "JSON",
+      "XML",
+      "Django",
     ],
   },
 ];
