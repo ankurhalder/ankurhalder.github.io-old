@@ -144,6 +144,39 @@ const courses = [
       "Front-End Development",
     ],
   },
+  {
+    title: "IBM Back-End Development",
+    provider: "Coursera",
+    completionDate: "February 2023 - February 2024",
+    description:
+      "During the IBM Back-End Development specialization, I, Ankur Halder, have gained proficiency in the latest practical skills and knowledge utilized by back-end developers in their daily work. This 12-course program offered by IBM provided comprehensive training on deploying and scaling applications using Docker, Kubernetes, microservices, and serverless functions. Additionally, I learned to write back-end applications with object-oriented programming languages like Python, while applying continuous integration/continuous development (CI/CD) and monitoring methodologies for software development life-cycle automation. Through hands-on labs and projects, I have built a solid foundation in back-end development, preparing me for entry-level roles in this field.",
+    topics: [
+      "Django Application Development with SQL and Databases",
+      "Python for Data Science, AI & Development",
+      "Hands-on Introduction to Linux Commands and Shell Scripting",
+      "Developing AI Applications with Python and Flask",
+      "Monitoring and Observability for Development and DevOps",
+      "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+      "Application Development using Microservices and Serverless",
+      "Introduction to Software Engineering",
+      "Back-end Application Development Capstone Project",
+      "Getting Started with Git and GitHub",
+      "Application Security for Developers and DevOps Professionals",
+    ],
+    certificateLink: "https://coursera.org/verify/professional-cert/ABC456",
+    skillsGained: [
+      "Python",
+      "Django",
+      "SQL",
+      "Linux",
+      "CI/CD",
+      "Microservices",
+      "Serverless",
+      "Git",
+      "GitHub",
+      "Application Security",
+    ],
+  },
 ];
 
 export default courses;
