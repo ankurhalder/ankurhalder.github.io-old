@@ -279,6 +279,32 @@ const courses = [
       "Workflow management",
     ],
   },
+  //@ The Ultimate React Course 2024: React, Redux & More
+  {
+    title: "The Ultimate React Course 2024: React, Redux & More",
+    provider: "Udemy",
+    completionDate: "July 2023",
+    description:
+      "This certificate above verifies that Ankur Halder successfully completed the course The Ultimate React Course 2024: React, Redux & More on 07/28/2023 as taught by Jonas Schmedtmann on Udemy.  The course covers advanced concepts in React development, including state management, routing, performance optimization, advanced React features, and building real-world app features.",
+    topics: [
+      "React fundamentals",
+      "State management with Redux",
+      "Advanced React features",
+      "React Router",
+      "Performance optimization",
+      "Styling with Tailwind CSS, CSS Modules, Styled Components",
+    ],
+    certificateLink:
+      "https://www.udemy.com/certificate/UC-3b120d82-005f-43b9-a60e-2fe949bb1f8c/",
+    certificateImageUrl: "/ultimate-react-course-2024-certificate.jpg",
+    skillsGained: [
+      "Advanced React development",
+      "State management with Redux",
+      "React Router",
+      "Performance optimization",
+      "Styling with CSS-in-JS libraries",
+    ],
+  },
 ];
 
 export default courses;
