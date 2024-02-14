@@ -19,6 +19,7 @@ const courses = [
     ],
     certificateLink:
       "https://coursera.org/verify/professional-cert/4GVM3WFXRHB6",
+    certificateImageUrl: "/meta-front-end-developer",
     skillsGained: [
       "Frontend Development",
       "HTML",
@@ -48,6 +49,7 @@ const courses = [
       "Programming in Python",
     ],
     certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    certificateImageUrl: "/meta-back-end-developer",
     skillsGained: [
       "Backend Development",
       "Python",
@@ -80,6 +82,7 @@ const courses = [
       "Introduction to Databases",
     ],
     certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    certificateImageUrl: "/meta-database-engineer",
     skillsGained: [
       "Database Management",
       "SQL Syntax",
@@ -105,6 +108,7 @@ const courses = [
       "Build Wireframes and Low-Fidelity Prototypes",
     ],
     certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    certificateImageUrl: "/google-ux-design",
     skillsGained: [
       "User Experience Design",
       "UX Research",
@@ -134,6 +138,7 @@ const courses = [
       "Getting Started with Git and GitHub",
     ],
     certificateLink: "https://coursera.org/verify/professional-cert/XYZ123",
+    certificateImageUrl: "/ibm-front-end-developer",
     skillsGained: [
       "HTML",
       "CSS",
@@ -165,6 +170,7 @@ const courses = [
       "Application Security for Developers and DevOps Professionals",
     ],
     certificateLink: "https://coursera.org/verify/professional-cert/ABC456",
+    certificateImageUrl: "/ibm-back-end-developer",
     skillsGained: [
       "Python",
       "Django",
@@ -200,6 +206,7 @@ const courses = [
       "Getting Started with Git and GitHub",
     ],
     certificateLink: "https://coursera.org/verify/professional-cert/ABC789",
+    certificateImageUrl: "/ibm-full-stack-software-developer",
     skillsGained: [
       "Git (Software)",
       "Cloud Applications",
