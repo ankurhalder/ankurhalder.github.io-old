@@ -254,6 +254,31 @@ const courses = [
       "Linux",
     ],
   },
+  //@ The Complete JavaScript Course 2024: From Zero to Expert!
+  {
+    title: "The Complete JavaScript Course 2024: From Zero to Expert!",
+    provider: "Udemy",
+    completionDate: "September 2022 - January 2023",
+    description:
+      "This certificate above verifies that Ankur Halder successfully completed the course The Complete JavaScript Course 2024: From Zero to Expert! on 01/08/2023 as taught by Jonas Schmedtmann on Udemy.",
+    topics: [
+      "JavaScript fundamentals",
+      "Modern ES6+ features",
+      "Modern OOP concepts",
+      "Asynchronous JavaScript",
+      "Architecting code",
+      "Modern tools for 2022 and beyond",
+    ],
+    certificateLink:
+      "https://www.udemy.com/certificate/UC-19c4ac79-892a-47ad-b473-06600f7300c8/",
+    certificateImageUrl: "/complete-javascript-course-2024-certificate.jpg",
+    skillsGained: [
+      "Advanced JavaScript",
+      "Problem-solving",
+      "Researching",
+      "Workflow management",
+    ],
+  },
 ];
 
 export default courses;
