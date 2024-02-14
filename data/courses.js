@@ -305,6 +305,47 @@ const courses = [
       "Styling with CSS-in-JS libraries",
     ],
   },
+  //@ Node.js, Express, MongoDB & More: The Complete Bootcamp 2024
+  {
+    title: "Node.js, Express, MongoDB & More: The Complete Bootcamp 2024",
+    provider: "Udemy",
+    completionDate: "September 2023",
+    description:
+      "This certificate above verifies that Ankur Halder successfully completed the course Node.js, Express, MongoDB & More: The Complete Bootcamp 2024 on 09/25/2023 as taught by Jonas Schmedtmann on Udemy.  The course covers a comprehensive bootcamp on Node.js, Express, MongoDB, and related technologies. It includes building RESTful APIs, server-side rendered websites, NoSQL data modeling, authentication, authorization, security best practices, payment integration, file uploading, error handling, deployment to production, and more.",
+    topics: [
+      "Fundamentals of Node.js, core modules, and NPM",
+      "Express framework",
+      "RESTful API design and development",
+      "Server-side website rendering with Pug templates",
+      "CRUD operations with MongoDB",
+      "Advanced MongoDB features",
+      "Fundamentals of Mongoose",
+      "Advanced Mongoose features",
+      "MVC architecture",
+      "Authentication and authorization",
+      "Security best practices",
+      "Payment integration with Stripe",
+      "File uploading",
+      "Error handling",
+      "Deployment with Heroku",
+      "Git and GitHub",
+    ],
+    certificateLink:
+      "https://www.udemy.com/certificate/UC-ea6816f6-5c07-4069-870d-65486f34d3ef/",
+    certificateImageUrl: "/node-js-bootcamp-2024-certificate.jpg",
+    skillsGained: [
+      "Node.js development",
+      "Express framework",
+      "MongoDB",
+      "Mongoose",
+      "RESTful API design",
+      "Authentication and authorization",
+      "Security best practices",
+      "Payment integration",
+      "Deployment",
+      "Git and GitHub",
+    ],
+  },
 ];
 
 export default courses;
