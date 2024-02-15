@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set GitHub output
-        run: echo "::set-env name=GITHUB_OUTPUT::true"
+        run: echo "GITHUB_OUTPUT=true" >> $GITHUB_ENV
 
       - name: Checkout
         uses: actions/checkout@v4
