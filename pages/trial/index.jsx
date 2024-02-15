@@ -1,10 +1,5 @@
-import ThemeToggle from "@/components/ThemeToogle";
 function index() {
-  return (
-    <div>
-      <ThemeToggle></ThemeToggle>
-    </div>
-  );
+  return <div></div>;
 }
 
 export default index;
