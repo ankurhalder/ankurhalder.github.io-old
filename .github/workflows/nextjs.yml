@@ -18,6 +18,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Set GitHub output
+        run: echo "::set-env name=GITHUB_OUTPUT::true"
+
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -64,11 +67,14 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
+      - name: Export static HTML
+        run: ${{ steps.detect-package-manager.outputs.runner }} next export
+
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
           name: out
-          path: .next
+          path: out # Assuming the export folder is named 'out'
 
   deploy:
     environment:
