@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useEffect } from "react";
-import { handleThemeChange } from "@/hooks/theme";
+import { handleThemeChange } from "@/function/theme";
 
 function ThemeToggle() {
   const handleCheckboxChange = () => {
