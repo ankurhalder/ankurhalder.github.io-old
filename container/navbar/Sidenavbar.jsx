@@ -12,7 +12,9 @@ const Sidenavbar = () => {
   return (
     <div className={`sidenavbar ${isCollapsed ? "collapsed" : ""}`}>
       <button className="collapse-btn" onClick={toggleCollapse}>
-        {isCollapsed ? ">>" : "<<"}
+        <span className="hamburger"></span>
+        <span className="hamburger"></span>
+        <span className="hamburger"></span>
       </button>
       <ul>
         <li>
