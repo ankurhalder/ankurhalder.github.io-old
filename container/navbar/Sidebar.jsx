@@ -1,13 +1,23 @@
+import React, { useState } from "react";
 import { Fragment } from "react";
+
 const Sidebar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <Fragment>
-      <input type="checkbox" id="check" />
-      <label htmlFor="check">
-        <i className="fas fa-bars" id="btn"></i>
-        <i className="fas fa-times" id="cancel"></i>
-      </label>
-      <div className="sidebar">
+      <button onClick={toggleSidebar}>
+        {isSidebarOpen ? (
+          <i className="fas fa-times" id="cancel"></i>
+        ) : (
+          <i className="fas fa-bars" id="btn"></i>
+        )}
+      </button>
+      <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
         <header>Menu</header>
         <a href="#" className="active">
           <i className="fas fa-qrcode"></i>

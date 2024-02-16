@@ -42,14 +42,18 @@
       text-transform: uppercase;
     }
   }
+
+  &.open {
+    left: 0;
+
+    a {
+      opacity: 1;
+      transition-delay: 0.3s;
+    }
+  }
 }
 
-#check {
-  display: none;
-}
-
-label #btn,
-label #cancel {
+button {
   position: absolute;
   left: 5px;
   cursor: pointer;
@@ -72,20 +76,18 @@ label #cancel {
     opacity: 0;
     visibility: hidden;
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
-#check:checked ~ .sidebar {
-  left: 0;
-}
-
-#check:checked ~ label #btn {
-  margin-left: 245px;
-  opacity: 0;
-  visibility: hidden;
-}
-
-#check:checked ~ label #cancel {
-  margin-left: 245px;
+button:focus #cancel {
   opacity: 1;
   visibility: visible;
+}
+
+button:focus #btn {
+  opacity: 0;
+  visibility: hidden;
 }
