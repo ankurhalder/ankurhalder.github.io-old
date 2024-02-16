@@ -1,6 +1,4 @@
-// components/Layout.js
 import { useState } from "react";
-import "../styles/main.scss";
 
 const Layout = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -1,4 +1,4 @@
-import personalInfo from "@/data/personalInfo";
+import { Layout } from "@/containers";
 
 function index() {
   return (
@@ -9,6 +9,7 @@ function index() {
           Click this link to see my old portfolio
         </a>
       </h2>
+      <Layout></Layout>
     </div>
   );
 }
