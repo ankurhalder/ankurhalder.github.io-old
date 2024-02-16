@@ -10,7 +10,10 @@ const Sidebar = () => {
 
   return (
     <Fragment>
-      <button onClick={toggleSidebar}>
+      <button
+        onClick={toggleSidebar}
+        style={{ left: isSidebarOpen ? "245px" : "5px" }} // Adjust button position based on sidebar state
+      >
         {isSidebarOpen ? (
           <i className="fas fa-times" id="cancel"></i>
         ) : (

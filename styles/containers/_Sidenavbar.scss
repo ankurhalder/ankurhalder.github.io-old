@@ -50,16 +50,19 @@
       opacity: 1;
       transition-delay: 0.3s;
     }
+
+    button {
+      margin-left: 240px;
+    }
   }
 }
 
 button {
   position: absolute;
-  left: 5px;
   cursor: pointer;
   color: #d6adff;
   border-radius: 5px;
-  margin: 15px 30px;
+  margin-top: 15px;
   font-size: 29px;
   background-color: #e8d1ff;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
@@ -71,23 +74,9 @@ button {
   text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
   line-height: 45px;
   transition: all 0.5s ease;
-
-  #cancel {
-    opacity: 0;
-    visibility: hidden;
-  }
+  z-index: 1; // Ensure button is above the sidebar
 
   &:focus {
     outline: none;
   }
-}
-
-button:focus #cancel {
-  opacity: 1;
-  visibility: visible;
-}
-
-button:focus #btn {
-  opacity: 0;
-  visibility: hidden;
 }
