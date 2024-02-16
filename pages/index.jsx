@@ -1,10 +1,11 @@
 import { Fragment } from "react";
-import { Sidenavbar } from "@/container";
+import { Sidenavbar, Sidebar } from "@/container";
 function index() {
   return (
     <Fragment>
       <h1>Hello World</h1>
-      <Sidenavbar />
+      {/* <Sidenavbar /> */}
+      <Sidebar />
     </Fragment>
   );
 }

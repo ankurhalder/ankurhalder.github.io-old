@@ -1,3 +1,5 @@
+// components/Sidenavbar.js
+
 import { useState } from "react";
 
 const Sidenavbar = () => {
