@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 const Sidenavbar = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
@@ -12,9 +12,9 @@ const Sidenavbar = () => {
   return (
     <div className={`sidenavbar ${isCollapsed ? "collapsed" : ""}`}>
       <button className="collapse-btn" onClick={toggleCollapse}>
-        <span className="hamburger"></span>
-        <span className="hamburger"></span>
-        <span className="hamburger"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </button>
       <ul>
         <li>
