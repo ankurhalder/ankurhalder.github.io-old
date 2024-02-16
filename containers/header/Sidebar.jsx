@@ -8,17 +8,17 @@ const Sidebar = () => {
       <ul className="nav">
         <li>
           <Link href="/">
-            <a>Home</a>
+            <div>Home</div>
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <a>About</a>
+            <div>About</div>
           </Link>
         </li>
         <li>
           <Link href="/contact">
-            <a>Contact</a>
+            <div>Contact</div>
           </Link>
         </li>
       </ul>
