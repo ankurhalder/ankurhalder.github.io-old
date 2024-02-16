@@ -1,4 +1,4 @@
-import { Layout } from "@/containers";
+// import { Layout } from "@/containers";
 
 function index() {
   return (
@@ -9,7 +9,7 @@ function index() {
           Click this link to see my old portfolio
         </a>
       </h2>
-      <Layout></Layout>
+      {/* <Layout></Layout> */}
     </div>
   );
 }
