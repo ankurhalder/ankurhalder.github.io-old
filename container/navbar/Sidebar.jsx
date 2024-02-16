@@ -1,8 +1,7 @@
-import React from "react";
-
+import { Fragment } from "react";
 const Sidebar = () => {
   return (
-    <>
+    <Fragment>
       <input type="checkbox" id="check" />
       <label htmlFor="check">
         <i className="fas fa-bars" id="btn"></i>
@@ -39,13 +38,7 @@ const Sidebar = () => {
           <span>Contact</span>
         </a>
       </div>
-
-      <div className="frame">
-        <p>Responsive</p>
-        <h2>SIDE BAR</h2>
-        <p>in Pure CSS</p>
-      </div>
-    </>
+    </Fragment>
   );
 };
 

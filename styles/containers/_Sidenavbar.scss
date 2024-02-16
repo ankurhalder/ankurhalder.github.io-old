@@ -1,24 +1,5 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
 :root {
-  --accent-color: #fff;
   --gradient-color: #fbfbfb;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);
 }
 
 .sidebar {
@@ -26,15 +7,15 @@ body {
   width: 240px;
   left: -240px;
   height: 100%;
-  background-color: #fff;
-  transition: all 0.5s ease;
+  background-color: #333;
+  transition: left 0.5s ease;
 
   header {
     font-size: 28px;
-    color: #353535;
+    color: #fff;
     line-height: 70px;
     text-align: center;
-    background-color: #fff;
+    background-color: #444;
     user-select: none;
     font-family: "Lato", sans-serif;
   }
@@ -43,24 +24,13 @@ body {
     display: block;
     height: 65px;
     width: 100%;
-    color: #353535;
+    color: #fff;
     line-height: 65px;
     padding-left: 30px;
     box-sizing: border-box;
     border-left: 5px solid transparent;
     font-family: "Lato", sans-serif;
     transition: all 0.5s ease;
-
-    &:active,
-    &:hover {
-      border-left: 5px solid var(--accent-color);
-      color: #fff;
-      background: linear-gradient(
-        to left,
-        var(--accent-color),
-        var(--gradient-color)
-      );
-    }
 
     i {
       font-size: 23px;
@@ -118,82 +88,4 @@ label #cancel {
   margin-left: 245px;
   opacity: 1;
   visibility: visible;
-}
-
-@media (max-width: 860px) {
-  .sidebar {
-    height: auto;
-    width: 70px;
-    left: 0;
-    margin: 100px 0;
-
-    header,
-    #btn,
-    #cancel {
-      display: none;
-    }
-
-    span {
-      position: absolute;
-      margin-left: 23px;
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    a {
-      height: 60px;
-
-      i {
-        margin-left: -10px;
-      }
-    }
-
-    a:hover {
-      width: 200px;
-      background: inherit;
-    }
-
-    a:hover span {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
-  .sidebar > a.active,
-  .sidebar > a:hover:nth-child(even) {
-    --accent-color: #52d6f4;
-    --gradient-color: #c1b1f7;
-  }
-
-  .sidebar a.active,
-  .sidebar > a:hover:nth-child(odd) {
-    --accent-color: #c1b1f7;
-    --gradient-color: #a890fe;
-  }
-}
-
-.frame {
-  width: 50%;
-  height: 30%;
-  margin: auto;
-  text-align: center;
-
-  h2 {
-    position: relative;
-    text-align: center;
-    color: #353535;
-    font-size: 60px;
-    font-family: "Lato", sans-serif;
-    margin: 0;
-    color: #a759f5;
-  }
-
-  p {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    text-align: center;
-    font-size: 30px;
-    color: #d6adff;
-    margin: 0;
-  }
 }

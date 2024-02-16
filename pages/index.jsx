@@ -3,8 +3,6 @@ import { Sidenavbar, Sidebar } from "@/container";
 function index() {
   return (
     <Fragment>
-      <h1>Hello World</h1>
-      {/* <Sidenavbar /> */}
       <Sidebar />
     </Fragment>
   );
