@@ -1,0 +1,31 @@
+.sidenavbar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding-top: 20px;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 10px;
+      text-align: center;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #555;
+        }
+      }
+    }
+  }
+}
