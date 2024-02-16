@@ -1,11 +1,6 @@
-import { Sidebar } from "@/containers";
 import { Fragment } from "react";
 function index() {
-  return (
-    <Fragment>
-      <Sidebar />
-    </Fragment>
-  );
+  return <Fragment></Fragment>;
 }
 
 export default index;
