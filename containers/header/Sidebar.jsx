@@ -1,10 +1,19 @@
 // Sidebar.js
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 const Sidebar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${isMenuOpen ? "open" : ""}`}>
+      <div className="hamburger-menu" onClick={toggleMenu}>
+        <div className={`icon ${isMenuOpen ? "close" : "hamburger"}`}></div>
+      </div>
       <ul className="nav">
         <li>
           <Link href="/">
