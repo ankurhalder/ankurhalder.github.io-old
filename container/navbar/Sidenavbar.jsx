@@ -1,6 +1,19 @@
+// components/Sidenavbar.js
+
+import { useState } from "react";
+
 const Sidenavbar = () => {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
   return (
-    <div className="sidenavbar">
+    <div className={`sidenavbar ${isCollapsed ? "collapsed" : ""}`}>
+      <button className="collapse-btn" onClick={toggleCollapse}>
+        {isCollapsed ? ">>" : "<<"}
+      </button>
       <ul>
         <li>
           <a href="#">Home</a>
