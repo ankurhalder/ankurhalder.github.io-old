@@ -1,22 +1,17 @@
-import React, { useState, useEffect } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router"; // Import useRouter hook
+import { useRouter } from "next/router";
 
-function Navbar({ toggleSidebar }) {
-  const [showSidebar, setShowSidebar] = useState(false);
+function Navbar({ showSidebar, toggleSidebar }) {
   const router = useRouter();
 
+  // Close sidebar when navigating
   useEffect(() => {
-    const handleRouteChange = () => {
-      setShowSidebar(false); // Reset sidebar when route changes
-    };
-
-    router.events.on("routeChangeComplete", handleRouteChange);
-
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router]);
+    if (showSidebar) {
+      toggleSidebar();
+    }
+  }, [router.pathname]);
 
   return (
     <nav className="navbar">
