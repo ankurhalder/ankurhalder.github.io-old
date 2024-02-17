@@ -40,21 +40,8 @@ const Navbar = () => {
     <>
       <nav className={`menu-activea ${isOpen ? "menu-active" : ""}`}>
         <h1>Menu</h1>
-        <ul>
-          <li>Jimmy</li>
-          <li>Susy</li>
-          <li>Jack</li>
-          <li>Nancy</li>
-          <li>Kurt</li>
-          <li>Clay</li>
-          <li>Lisa</li>
-        </ul>
       </nav>
-      <main className={`main ${isOpen ? "menu-active" : ""}`}>
-        <section>
-          <h1>&larr; Sidebar Menu Thingy</h1>
-        </section>
-      </main>
+      <main className={`main ${isOpen ? "menu-active" : ""}`}></main>
     </>
   );
 };

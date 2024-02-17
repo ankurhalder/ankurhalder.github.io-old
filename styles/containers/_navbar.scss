@@ -52,21 +52,6 @@ nav {
     margin: 0;
     padding: 0;
   }
-  li {
-    display: inline-block;
-    padding: 0 1em;
-    width: 100%;
-    height: $menuItemHeight;
-    color: $menuText;
-    line-height: $menuItemHeight;
-    background-color: $menuColor;
-    &:nth-of-type(2n) {
-      background-color: lighten($menuColor, 2%);
-    }
-    &:hover {
-      background: #fff;
-    }
-  }
 }
 
 main {
@@ -89,27 +74,4 @@ main {
   &.menu-hover {
     transform: perspective($perspective) rotateY($degHover);
   }
-  section {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    padding: 1em 4em;
-    max-width: 680px;
-    overflow: auto;
-    background-color: rgba(white, 0.5);
-  }
-}
-
-h1 {
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 2em;
-}
-
-p {
-  display: inline-block;
-  margin: 16px 0;
 }
