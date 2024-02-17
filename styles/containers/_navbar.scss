@@ -9,15 +9,15 @@ $contentBG: #9dc6d1;
 $bodyBg: #21212d;
 $perspective: 800px;
 
-body {
-  background-color: $bodyBg;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+// body {
+//   background-color: $bodyBg;
+//   font-family: "Roboto", sans-serif;
+//   font-size: 16px;
+//   line-height: 1.5;
+//   margin: 0;
+//   padding: 0;
+//   overflow: hidden;
+// }
 nav {
   z-index: 100;
   position: absolute;
