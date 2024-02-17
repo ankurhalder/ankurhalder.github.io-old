@@ -29,8 +29,8 @@
   z-index: 1;
 
   &.bent {
-    background-color: #f0f0f0; /* Change background color when bending */
-    transform: perspective(1000px) rotateY(15deg); /* Adjust bending to the right side */
+    background-color: #f0f0f0;
+    transform: perspective(1000px) rotateY(15deg);
   }
 }
 
