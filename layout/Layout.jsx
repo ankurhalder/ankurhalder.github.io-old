@@ -18,12 +18,8 @@ function Layout({ children }) {
         <span></span>
       </div>
 
-      <div className={`sidebar ${showSidebar ? "show" : ""}`}>
-        {/* Sidebar content goes here */}
-        {/* You can place your sidebar items and links here */}
-      </div>
+      <div className={`sidebar ${showSidebar ? "show" : ""}`}></div>
 
-      {/* Main Content */}
       <div className={`mainContent ${showSidebar ? "shift" : ""}`}>
         {children}
       </div>
