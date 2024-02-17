@@ -1,55 +1,68 @@
 // Layout.scss
 
+// Hamburger Menu styles
 .hamburgerMenu {
   position: fixed;
   top: 20px;
   left: 20px;
-  z-index: 1000;
   cursor: pointer;
+  z-index: 1000;
 
   span {
     display: block;
     width: 30px;
     height: 3px;
     background-color: #333;
-    margin: 5px 0;
+    margin-bottom: 5px;
     transition: transform 0.3s ease;
   }
 
-  &:hover {
-    span {
-      background-color: #fff;
-    }
+  span:nth-child(2) {
+    width: 20px;
+  }
+
+  span:first-child {
+    transform: translateY(-6px);
+  }
+
+  span:last-child {
+    transform: translateY(3px);
   }
 }
 
-.content {
-  transition: transform 0.5s ease;
-  position: relative;
-  z-index: 1;
-
-  &.bent {
-    background-color: #f0f0f0;
-    transform: perspective(1000px) rotateY(15deg);
-  }
-}
-
-.sideNavbar {
+// Sidebar styles
+.sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 250px;
-  height: 100%;
+  bottom: 0;
+  width: 0;
   background-color: #333;
-  transition: transform 0.5s ease, visibility 0.5s ease;
-  z-index: 2; /* Ensure side navbar is above main content */
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: width 0.3s ease;
 
-  &.open {
-    transform: translateX(0);
+  &.show {
+    width: 250px; // Adjust width as needed
   }
 
-  &.closed {
-    transform: translateX(-250px);
-    visibility: hidden; /* Hide when closed */
+  // Sidebar content styles
+  // Add your styles for sidebar items and links here
+}
+
+// Main Content styles
+.mainContent {
+  transition: margin-left 0.3s ease;
+  margin-left: 0;
+
+  &.shift {
+    margin-left: 250px; // Adjust margin to match sidebar width
   }
+
+  // Add your styles for the main content here
+}
+
+/* Hide scrollbar when sidebar is open */
+body {
+  overflow: hidden;
 }
