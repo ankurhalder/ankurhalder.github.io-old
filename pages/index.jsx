@@ -5,7 +5,7 @@ function index() {
   return (
     <Fragment>
       <Layout>
-        <h1>Homec dwqdmqwp cwqd</h1>
+        <h1>Ankur Halder</h1>
       </Layout>
     </Fragment>
   );
