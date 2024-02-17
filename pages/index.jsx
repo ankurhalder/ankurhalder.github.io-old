@@ -5,7 +5,7 @@ function index() {
   return (
     <Fragment>
       <Layout>
-        <h1>Ankur Halder</h1>
+        <h1 style={{ height: "100vh" }}>Ankur Halder</h1>
       </Layout>
     </Fragment>
   );
