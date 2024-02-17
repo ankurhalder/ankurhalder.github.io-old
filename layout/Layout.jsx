@@ -10,7 +10,10 @@ function Layout({ children }) {
   return (
     <Fragment>
       {/* Hamburger Menu */}
-      <div className="hamburgerMenu" onClick={toggleSidebar}>
+      <div
+        className={`hamburgerMenu ${showSidebar ? "open" : ""}`}
+        onClick={toggleSidebar}
+      >
         <span></span>
         <span></span>
         <span></span>
