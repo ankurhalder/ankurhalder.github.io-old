@@ -1,13 +1,7 @@
 import { Fragment } from "react";
-import { Sidebar } from "@/container";
 
 function Layout({ children }) {
-  return (
-    <Fragment>
-      <Sidebar></Sidebar>
-      {children}
-    </Fragment>
-  );
+  return <Fragment>{children}</Fragment>;
 }
 
 export default Layout;
