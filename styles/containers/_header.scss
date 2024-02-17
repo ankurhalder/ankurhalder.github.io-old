@@ -5,36 +5,8 @@
   justify-content: space-between;
   align-items: center;
 
-  .navbar__list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-
-    li {
-      margin-right: 20px;
-
-      .navbar__link {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        transition: color 0.3s ease;
-
-        &:hover {
-          color: #ff4500;
-        }
-      }
-
-      &.active {
-        .navbar__link {
-          color: #ffeb3b; /* Color of active link */
-        }
-      }
-    }
-  }
-
   .hamburgerMenu {
-    display: none;
+    display: flex;
     flex-direction: column;
     cursor: pointer;
 
@@ -60,9 +32,5 @@
         transform: translateY(-8px) rotate(-45deg);
       }
     }
-  }
-
-  .hamburgerMenu {
-    display: flex;
   }
 }
