@@ -2,12 +2,12 @@ $menuWidth: 16em;
 $menuColor: #353441;
 $menuText: #9dc6d1;
 $menuItemHeight: 60px;
-$degHover: 5deg; // Adjust the degree of rotation for hover
-$degActive: 15deg; // Adjust the degree of rotation for active
+$degHover: 5deg;
+$degActive: 15deg;
 $timing: 150ms;
 $contentBG: #9dc6d1;
 $bodyBg: #21212d;
-$perspective: 800px; // Adjust the perspective value as needed
+$perspective: 800px;
 
 nav {
   z-index: 100;
@@ -18,14 +18,14 @@ nav {
   width: $menuWidth;
   background-color: $menuColor;
   transform: translateX(-$menuWidth);
-  transition: transform $timing ease-out; // Add transition for smooth animation
+  transition: transform $timing ease-out;
   &.menu-active {
     transform: translateX(0);
   }
   &.menu-hover {
-    transform: translateX(0); // Keep the menu visible when hovering
+    transform: translateX(0);
   }
-  // Menu Toggle
+
   h1 {
     z-index: 100;
     display: block;
@@ -81,13 +81,13 @@ main {
   overflow: hidden;
   background-color: $contentBG;
   transform-origin: 0% 50%;
-  transition: transform $timing ease-out; // Add transition for smooth animation
-  transform: perspective($perspective) rotateY(0deg); // Initially no rotation
+  transition: transform $timing ease-out;
+  transform: perspective($perspective) rotateY(0deg);
   &.menu-active {
-    transform: perspective($perspective) rotateY($degActive); // Adjust the body when menu is active
+    transform: perspective($perspective) rotateY($degActive);
   }
   &.menu-hover {
-    transform: perspective($perspective) rotateY($degHover); // Apply slight rotation on hover
+    transform: perspective($perspective) rotateY($degHover);
   }
   section {
     position: absolute;
@@ -102,9 +102,6 @@ main {
     background-color: rgba(white, 0.5);
   }
 }
-
-// Body Copy Styling
-// =================
 
 h1 {
   font-weight: 800;

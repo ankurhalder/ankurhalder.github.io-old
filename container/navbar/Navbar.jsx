@@ -11,8 +11,8 @@ const Navbar = () => {
 
     const handleClick = () => {
       setIsOpen(!isOpen);
-      nav.toggleClass("menu-hover", !isOpen); // Apply hover effect only when menu is closed
-      main.toggleClass("menu-hover", !isOpen); // Apply hover effect only when menu is closed
+      nav.toggleClass("menu-hover", !isOpen);
+      main.toggleClass("menu-hover", !isOpen);
     };
 
     const handleHover = () => {
@@ -53,7 +53,6 @@ const Navbar = () => {
       <main className={`main ${isOpen ? "menu-active" : ""}`}>
         <section>
           <h1>&larr; Sidebar Menu Thingy</h1>
-          {/* Rest of your content */}
         </section>
       </main>
     </>
