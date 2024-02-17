@@ -1,9 +1,10 @@
 import { Fragment } from "react";
-import { Navbar } from "@/container";
+import Layout from "@/layout/Layout";
+
 function index() {
   return (
     <Fragment>
-      <Navbar />
+      <Layout></Layout>
     </Fragment>
   );
 }
