@@ -1,0 +1,53 @@
+.navbar {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar:hover {
+  background: linear-gradient(
+    to right,
+    #4e54c8,
+    #4ea0fb
+  ); /* Change background on hover */
+}
+
+.navbar__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar__list li {
+  margin-right: 20px;
+}
+
+.navbar__link {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.navbar__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transform: scaleX(0);
+  transition: transform 0.3s ease; /* Smooth transition for underline */
+}
+
+.navbar__link:hover {
+  color: #ffeb3b;
+}
+
+.navbar__link:hover::after {
+  transform: scaleX(1); /* Expand underline on hover */
+}
