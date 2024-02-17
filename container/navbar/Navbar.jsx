@@ -11,25 +11,28 @@ const Navbar = () => {
 
     const handleClick = () => {
       setIsOpen(!isOpen);
+      nav.toggleClass("menu-hover", !isOpen); // Apply hover effect only when menu is closed
+      main.toggleClass("menu-hover", !isOpen); // Apply hover effect only when menu is closed
+    };
+
+    const handleHover = () => {
+      if (!isOpen) {
+        main.addClass("menu-hover");
+      }
+    };
+
+    const handleMouseLeave = () => {
+      if (!isOpen) {
+        main.removeClass("menu-hover");
+      }
     };
 
     menu.on("click", handleClick);
-
-    menu.hover(
-      function () {
-        if (!isOpen) {
-          nav.addClass("menu-hover");
-          main.addClass("menu-hover");
-        }
-      },
-      function () {
-        nav.removeClass("menu-hover");
-        main.removeClass("menu-hover");
-      }
-    );
+    menu.hover(handleHover, handleMouseLeave);
 
     return () => {
       menu.off("click", handleClick);
+      menu.off("mouseenter mouseleave", handleHover);
     };
   }, [isOpen]);
 
@@ -50,15 +53,6 @@ const Navbar = () => {
       <main className={`main ${isOpen ? "menu-active" : ""}`}>
         <section>
           <h1>&larr; Sidebar Menu Thingy</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
           {/* Rest of your content */}
         </section>
       </main>
