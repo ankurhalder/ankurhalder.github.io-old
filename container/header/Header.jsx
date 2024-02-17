@@ -1,28 +1,33 @@
 import React from "react";
-
+import Link from "next/link";
 function Navbar({ showSidebar, toggleSidebar }) {
   return (
     <nav className="navbar">
       <ul className="navbar__list">
         <li>
-          <a href="#" className="navbar__link">
+          <Link href="/" className="navbar__link">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="navbar__link">
+          <Link href="/about" className="navbar__link">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="navbar__link">
-            Services
-          </a>
+          <Link href="/skills" className="navbar__link">
+            Skills
+          </Link>
         </li>
         <li>
-          <a href="#" className="navbar__link">
+          <Link href="/training" className="navbar__link">
+            Training
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact" className="navbar__link">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
       <div
