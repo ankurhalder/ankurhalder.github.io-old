@@ -1,6 +1,6 @@
 import React from "react";
 
-function Navbar() {
+function Navbar({ showSidebar, toggleSidebar }) {
   return (
     <nav className="navbar">
       <ul className="navbar__list">
@@ -25,6 +25,14 @@ function Navbar() {
           </a>
         </li>
       </ul>
+      <div
+        className={`hamburgerMenu ${showSidebar ? "open" : ""}`}
+        onClick={toggleSidebar}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   );
 }

@@ -9,19 +9,19 @@ function Layout({ children }) {
 
   return (
     <Fragment>
-      <div
+      {/* <div
         className={`hamburgerMenu ${showSidebar ? "open" : ""}`}
         onClick={toggleSidebar}
       >
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </div> */}
 
       <div className={`sidebar ${showSidebar ? "show" : ""}`}>hi</div>
 
       <div className={`mainContent ${showSidebar ? "shift" : ""}`}>
-        <Navbar />
+        <Navbar showsidebar={showSidebar} toggleSidebar={toggleSidebar} />
         {children}
       </div>
     </Fragment>
