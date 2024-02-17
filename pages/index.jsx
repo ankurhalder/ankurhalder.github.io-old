@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import Layout from "@/layout/Layout";
+import { Layout } from "@/layout";
 
-function index() {
+function Home() {
   return (
     <Fragment>
       <Layout>
@@ -126,4 +126,4 @@ function index() {
   );
 }
 
-export default index;
+export default Home;
