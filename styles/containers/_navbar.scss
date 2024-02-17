@@ -9,6 +9,15 @@ $contentBG: #9dc6d1;
 $bodyBg: #21212d;
 $perspective: 800px;
 
+body {
+  background-color: $bodyBg;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 nav {
   z-index: 100;
   position: absolute;
@@ -64,7 +73,7 @@ main {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: $contentBG;
+  background-color: var(--white);
   transform-origin: 0% 50%;
   transition: transform $timing ease-out;
   transform: perspective($perspective) rotateY(0deg);
