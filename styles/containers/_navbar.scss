@@ -1,0 +1,118 @@
+$menuWidth: 16em;
+$menuColor: #353441;
+$menuText: #9dc6d1;
+$menuItemHeight: 60px;
+$degActive: 15deg;
+$degHover: 1deg;
+$timing: 150ms;
+$contentBG: #9dc6d1;
+$bodyBg: #21212d;
+$perspective: 800px; // Adjust the perspective value as needed
+
+nav {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: $menuWidth;
+  background-color: $menuColor;
+  transform: translateX(-$menuWidth);
+  transition: transform $timing ease-out; // Add transition for smooth animation
+  &.menu-active {
+    transform: translateX(0);
+  }
+  &.menu-hover {
+    transform: translateX(0); // Keep the menu visible when hovering
+  }
+  // Menu Toggle
+  h1 {
+    z-index: 100;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -$menuItemHeight;
+    height: $menuItemHeight;
+    width: $menuItemHeight;
+    line-height: $menuItemHeight;
+    font-size: 0.8em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: $menuText;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $menuColor;
+    cursor: pointer;
+    &:hover {
+      color: $menuColor;
+      background: #fff;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    padding: 0 1em;
+    width: 100%;
+    height: $menuItemHeight;
+    color: $menuText;
+    line-height: $menuItemHeight;
+    background-color: $menuColor;
+    &:nth-of-type(2n) {
+      background-color: lighten($menuColor, 2%);
+    }
+    &:hover {
+      background: #fff;
+    }
+  }
+}
+
+main {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: $contentBG;
+  transform-origin: 0% 50%;
+  transition: transform $timing ease-out; // Add transition for smooth animation
+  transform: perspective($perspective); // Apply perspective to the body
+  &.menu-active {
+    transform: perspective($perspective) translateX($menuWidth); // Adjust the body when menu is active
+  }
+  &.menu-hover {
+    transform: perspective($perspective) rotateY($degHover); // Apply 3D effect on hover
+  }
+  section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 1em 4em;
+    max-width: 680px;
+    overflow: auto;
+    background-color: rgba(white, 0.5);
+  }
+}
+
+// Body Copy Styling
+// =================
+
+h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+p {
+  display: inline-block;
+  margin: 16px 0;
+}
