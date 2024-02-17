@@ -1,6 +1,3 @@
-// Layout.scss
-
-// Hamburger Menu styles
 .hamburgerMenu {
   position: fixed;
   top: 20px;
@@ -41,7 +38,6 @@
   }
 }
 
-// Sidebar styles
 .sidebar {
   position: fixed;
   top: 0;
@@ -54,26 +50,15 @@
   transition: width 0.3s ease;
 
   &.show {
-    width: 250px; // Adjust width as needed
+    width: 250px;
   }
-
-  // Sidebar content styles
-  // Add your styles for sidebar items and links here
 }
 
-// Main Content styles
 .mainContent {
   transition: margin-left 0.3s ease;
   margin-left: 0;
 
   &.shift {
-    margin-left: 250px; // Adjust margin to match sidebar width
+    margin-left: 250px;
   }
-
-  // Add your styles for the main content here
-}
-
-/* Hide scrollbar when sidebar is open */
-body {
-  overflow: hidden;
 }

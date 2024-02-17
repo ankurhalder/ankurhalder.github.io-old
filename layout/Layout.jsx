@@ -9,7 +9,6 @@ function Layout({ children }) {
 
   return (
     <Fragment>
-      {/* Hamburger Menu */}
       <div
         className={`hamburgerMenu ${showSidebar ? "open" : ""}`}
         onClick={toggleSidebar}
@@ -19,7 +18,6 @@ function Layout({ children }) {
         <span></span>
       </div>
 
-      {/* Sidebar */}
       <div className={`sidebar ${showSidebar ? "show" : ""}`}>
         {/* Sidebar content goes here */}
         {/* You can place your sidebar items and links here */}
