@@ -1,29 +1,38 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
-// import { useRouter } from "next/router";
+import { Loader } from "@/components";
+import { useRouter } from "next/router";
 
 function Navbar({ showSidebar, toggleSidebar }) {
-  // const router = useRouter();
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
-  // const delayedRouterPush = (href) => {
-  //   const delay = 2000; // 2 seconds
-  //   setTimeout(() => {
-  //     router.push(href);
-  //   }, delay);
-  // };
+  const delayedRouterPush = (href) => {
+    const delay = 2000;
+    setLoading(true); // Set loading state to true before routing
+    setTimeout(() => {
+      try {
+        router.push(href);
+      } catch (error) {
+        console.error("Error while routing:", error);
+      } finally {
+        setLoading(false); // Set loading state back to false after routing
+      }
+    }, delay);
+  };
 
-  // useEffect(() => {
-  //   if (showSidebar) {
-  //     toggleSidebar();
-  //   }
-  // }, [router.pathname, showSidebar, toggleSidebar]);
+  useEffect(() => {
+    if (showSidebar) {
+      toggleSidebar();
+    }
+  }, [router.pathname, showSidebar, toggleSidebar]);
 
   return (
     <nav className="navbar">
-      <Link href="/">Ankur Halder</Link>
-      {/* <a className="navbar__logo" onClick={() => delayedRouterPush("/")}>
+      {loading && <Loader />}
+      <a className="navbar__logo" onClick={() => delayedRouterPush("/")}>
         Ankur Halder
-      </a> */}
+      </a>
       <div
         className={`hamburgerMenu ${showSidebar ? "open" : ""}`}
         onClick={toggleSidebar}
