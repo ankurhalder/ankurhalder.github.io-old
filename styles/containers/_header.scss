@@ -1,54 +1,90 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  justify-content: space-between;
   background-color: #333;
   color: #fff;
+  padding: 1rem;
   position: relative;
+  z-index: 1000;
+  height: 80px;
 
-  &__logo {
+  &__brand {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
     cursor: pointer;
-    text-decoration: none;
-    color: inherit;
-    margin-left: 10px;
+    .brand__image {
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+    .brand__logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 
-    &:hover {
-      text-decoration: underline;
+  &__slogan {
+    flex-grow: 1;
+    margin: 0 1rem;
+    .slogan__text {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin: 0;
     }
   }
 
   .hamburgerMenu {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
     width: 30px;
     height: 20px;
-    cursor: pointer;
 
     span {
       display: block;
+      position: absolute;
       width: 100%;
-      height: 3px;
+      height: 2px;
       background-color: #fff;
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease-in-out;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      &::before {
+        top: -7px;
+      }
+
+      &::after {
+        bottom: -7px;
+      }
     }
 
     &.open {
-      span:first-child {
-        transform: translateY(8px) rotate(45deg);
-      }
+      span {
+        transform: rotate(45deg);
 
-      span:nth-child(2) {
-        opacity: 0;
-      }
+        &::before {
+          top: 0;
+          transform: rotate(90deg);
+        }
 
-      span:last-child {
-        transform: translateY(-8px) rotate(-45deg);
+        &::after {
+          bottom: 0;
+          transform: rotate(90deg);
+        }
       }
     }
   }

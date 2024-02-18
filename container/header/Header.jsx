@@ -43,7 +43,7 @@ function Navbar({ showSidebar, toggleSidebar }) {
         </a>
       </div>
       <div className="navbar__slogan">
-        <p>
+        <p className="slogan__text">
           Passionate dev skilled in MERN stack, Django, Python, JavaScript,
           DevOps, Next.js, and DSA. Committed to crafting efficient solutions &
           open source contribution.
