@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
 const Loader = () => {
-  const [isActive, setIsActive] = useState(true); // Initially set to true to trigger the loader on component mount
+  const [isActive, setIsActive] = useState(true);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setIsActive(false);
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(timeoutId);
   }, []);

@@ -2,26 +2,14 @@ import { Fragment, useState } from "react";
 import { Navbar } from "@/container";
 import { useRouter } from "next/router";
 import { Loader } from "@/components";
+import Link from "next/link";
 
 function Layout({ children }) {
   const [showSidebar, setShowSidebar] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const router = useRouter();
+  const [loading, setLoading] = useState(true); // Set loading to true initially
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
-  };
-
-  const handleNavigation = async (href) => {
-    try {
-      // await new Promise((resolve) => setTimeout(resolve, 2000));
-      setLoading(true);
-      await router.push(href);
-    } catch (error) {
-      console.error("Error navigating:", error);
-    } finally {
-      setLoading(false);
-    }
   };
 
   const links = [
@@ -36,8 +24,10 @@ function Layout({ children }) {
       <div className={`sidebar ${showSidebar ? "show" : ""}`}>
         <ul>
           {links.map((link, index) => (
-            <li key={index}>
-              <a onClick={() => handleNavigation(link.href)}>{link.label}</a>
+            <li key={link.label}>
+              <Link href={link.href} key={index}>
+                {link.label}
+              </Link>
             </li>
           ))}
         </ul>
@@ -45,7 +35,8 @@ function Layout({ children }) {
 
       <div className={`mainContent ${showSidebar ? "shift" : ""}`}>
         <Navbar showsidebar={showSidebar} toggleSidebar={toggleSidebar} />
-        <Loader loading={loading} />
+        <Loader loading={loading} />{" "}
+        {/* Pass the loading state to the Loader component */}
         {children}
       </div>
     </Fragment>

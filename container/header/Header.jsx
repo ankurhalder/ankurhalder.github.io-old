@@ -1,28 +1,29 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 function Navbar({ showSidebar, toggleSidebar }) {
-  const router = useRouter();
+  // const router = useRouter();
 
-  const delayedRouterPush = (href) => {
-    const delay = 2000; // 2 seconds
-    setTimeout(() => {
-      router.push(href);
-    }, delay);
-  };
+  // const delayedRouterPush = (href) => {
+  //   const delay = 2000; // 2 seconds
+  //   setTimeout(() => {
+  //     router.push(href);
+  //   }, delay);
+  // };
 
-  useEffect(() => {
-    if (showSidebar) {
-      toggleSidebar();
-    }
-  }, [router.pathname, showSidebar, toggleSidebar]);
+  // useEffect(() => {
+  //   if (showSidebar) {
+  //     toggleSidebar();
+  //   }
+  // }, [router.pathname, showSidebar, toggleSidebar]);
 
   return (
     <nav className="navbar">
-      <a className="navbar__logo" onClick={() => delayedRouterPush("/")}>
+      <Link href="/">Ankur Halder</Link>
+      {/* <a className="navbar__logo" onClick={() => delayedRouterPush("/")}>
         Ankur Halder
-      </a>
+      </a> */}
       <div
         className={`hamburgerMenu ${showSidebar ? "open" : ""}`}
         onClick={toggleSidebar}
