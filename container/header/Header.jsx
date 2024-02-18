@@ -5,6 +5,13 @@ import { useRouter } from "next/router";
 function Navbar({ showSidebar, toggleSidebar }) {
   const router = useRouter();
 
+  const delayedRouterPush = (href) => {
+    const delay = 2000; // 2 seconds
+    setTimeout(() => {
+      router.push(href);
+    }, delay);
+  };
+
   useEffect(() => {
     if (showSidebar) {
       toggleSidebar();
@@ -13,9 +20,9 @@ function Navbar({ showSidebar, toggleSidebar }) {
 
   return (
     <nav className="navbar">
-      <Link href="/" className="navbar__logo">
+      <a className="navbar__logo" onClick={() => delayedRouterPush("/")}>
         Ankur Halder
-      </Link>
+      </a>
       <div
         className={`hamburgerMenu ${showSidebar ? "open" : ""}`}
         onClick={toggleSidebar}
