@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import { Loader } from "@/components";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import { Loader } from "@/components";
 
 function Navbar({ showSidebar, toggleSidebar }) {
   const [loading, setLoading] = useState(false);
@@ -30,6 +30,12 @@ function Navbar({ showSidebar, toggleSidebar }) {
   return (
     <nav className="navbar">
       {loading && <Loader />}
+      <Image
+        src="/Ankur_Halder.png"
+        alt="Ankur-Halder"
+        width={20}
+        height={20}
+      ></Image>
       <a className="navbar__logo" onClick={() => delayedRouterPush("/")}>
         Ankur Halder
       </a>
