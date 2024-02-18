@@ -9,14 +9,14 @@ function Navbar({ showSidebar, toggleSidebar }) {
 
   const delayedRouterPush = (href) => {
     const delay = 2000;
-    setLoading(true); // Set loading state to true before routing
+    setLoading(true);
     setTimeout(() => {
       try {
         router.push(href);
       } catch (error) {
         console.error("Error while routing:", error);
       } finally {
-        setLoading(false); // Set loading state back to false after routing
+        setLoading(false);
       }
     }, delay);
   };
