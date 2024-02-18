@@ -8,11 +8,18 @@
   position: relative;
 
   &__logo {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
     color: inherit;
+    margin-left: 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .hamburgerMenu {

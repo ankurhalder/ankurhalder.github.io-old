@@ -30,15 +30,18 @@ function Navbar({ showSidebar, toggleSidebar }) {
   return (
     <nav className="navbar">
       {loading && <Loader />}
-      <Image
-        src="/Ankur_Halder.png"
-        alt="Ankur-Halder"
-        width={20}
-        height={20}
-      ></Image>
-      <a className="navbar__logo" onClick={() => delayedRouterPush("/")}>
-        Ankur Halder
-      </a>
+      <div className="navbar__brand">
+        <Image
+          className="brand__image"
+          src="/Ankur_Halder.png"
+          alt="Ankur-Halder"
+          width={20}
+          height={20}
+        ></Image>
+        <a className="brand__logo" onClick={() => delayedRouterPush("/")}>
+          Ankur Halder
+        </a>
+      </div>
       <div
         className={`hamburgerMenu ${showSidebar ? "open" : ""}`}
         onClick={toggleSidebar}
