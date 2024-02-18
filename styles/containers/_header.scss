@@ -2,89 +2,98 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1000;
-  height: 80px;
 
   &__brand {
     display: flex;
     align-items: center;
-    cursor: pointer;
-    .brand__image {
+
+    &__image {
       border-radius: 50%;
       margin-right: 0.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    .brand__logo {
-      font-size: 1.2rem;
+
+    &__logo {
+      font-size: 1.5rem;
       font-weight: bold;
+      color: #333;
       text-decoration: none;
-      color: inherit;
+      transition: color 0.3s ease;
+
       &:hover {
-        text-decoration: underline;
+        color: #007bff;
       }
     }
   }
 
   &__slogan {
     flex-grow: 1;
-    margin: 0 1rem;
-    .slogan__text {
+    margin: 0 2rem;
+
+    &__text {
       font-size: 0.9rem;
-      line-height: 1.4;
-      margin: 0;
+      color: #666;
+      line-height: 1.5;
     }
   }
 
   .hamburgerMenu {
-    display: flex;
+    display: block; /* Always visible */
     cursor: pointer;
-    position: relative;
-    width: 30px;
-    height: 20px;
+    transition: transform 0.3s ease;
 
-    span {
+    &.open {
+      transform: rotate(90deg);
+
+      & > span {
+        background-color: #007bff;
+
+        &:first-child,
+        &:last-child {
+          transform: translateY(0) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+      }
+    }
+
+    & > span {
       display: block;
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: #fff;
-      transition: transform 0.3s ease-in-out;
+      width: 30px;
+      height: 4px;
+      margin: 5px 0;
+      background-color: #666;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: relative;
 
-      &::before,
-      &::after {
+      &:before,
+      &:after {
         content: "";
         position: absolute;
         width: 100%;
         height: 2px;
         background-color: #fff;
-        transition: transform 0.3s ease-in-out;
+        transition: inherit;
+        border-radius: 3px;
       }
 
-      &::before {
-        top: -7px;
+      &:before {
+        top: -6px;
+        transform: rotate(-45deg);
       }
 
-      &::after {
-        bottom: -7px;
-      }
-    }
-
-    &.open {
-      span {
+      &:after {
+        bottom: -6px;
         transform: rotate(45deg);
-
-        &::before {
-          top: 0;
-          transform: rotate(90deg);
-        }
-
-        &::after {
-          bottom: 0;
-          transform: rotate(90deg);
-        }
       }
     }
   }
