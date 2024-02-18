@@ -2,7 +2,6 @@ import { Fragment, useState } from "react";
 import { Navbar } from "@/container";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Loading from "@/components/Loading";
 
 function Layout({ children }) {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -16,7 +15,7 @@ function Layout({ children }) {
   const handleNavigation = async (href) => {
     setLoading(true);
     try {
-      await new Promise((resolve) => setTimeout(resolve, 2000)); // Add a 2-second delay
+      await new Promise((resolve) => setTimeout(resolve, 2000));
       await router.push(href);
     } catch (error) {
       console.error("Error navigating:", error);
@@ -34,7 +33,6 @@ function Layout({ children }) {
 
   return (
     <Fragment>
-      {loading && <Loading />}
       <div className={`sidebar ${showSidebar ? "show" : ""}`}>
         <ul>
           {links.map((link, index) => (
