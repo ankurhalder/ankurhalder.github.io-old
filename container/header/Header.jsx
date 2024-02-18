@@ -59,9 +59,23 @@ function Navbar({ showSidebar, toggleSidebar }) {
         className={`hamburgerMenu ${activateSidebar ? "open" : ""}`}
         onClick={oneClickhandler}
       >
-        <span></span>
-        <span></span>
-        <span></span>
+        {activateSidebar ? (
+          <Image
+            className="close-icon"
+            src="/navbar/close.gif"
+            alt="Close"
+            width={100}
+            height={100}
+          />
+        ) : (
+          <Image
+            className="hamburger-icon"
+            src="/navbar/hamburger.gif"
+            alt="Hamburger"
+            width={100}
+            height={100}
+          />
+        )}
       </div>
     </nav>
   );
