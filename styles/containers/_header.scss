@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: #fff;
+  background-color: #333; /* Dark mode background color */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1000;
@@ -16,19 +16,19 @@
     &__image {
       border-radius: 50%;
       margin-right: 0.5rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Dark mode box-shadow */
       transition: transform 0.3s ease;
 
       &:hover {
         transform: translateY(-2px) scale(1.05);
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 10px rgba(255, 255, 255, 0.1); /* Dark mode box-shadow */
       }
     }
 
     &__logo {
       font-size: 1.5rem;
       font-weight: bold;
-      color: #333;
+      color: #fff; /* Dark mode text color */
       text-decoration: none;
       position: relative;
       transition: color 0.3s ease;
@@ -63,7 +63,7 @@
 
     &__text {
       font-size: 0.9rem;
-      color: #666;
+      color: #ccc; /* Dark mode text color */
       line-height: 1.5;
       position: relative;
     }
@@ -112,7 +112,7 @@
       width: 30px;
       height: 4px;
       margin: 5px 0;
-      background-color: #666;
+      background-color: #ccc; /* Dark mode hamburger menu color */
       transition: all 0.3s ease;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -124,7 +124,7 @@
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: #fff;
+        background-color: #fff; /* Dark mode hamburger menu icon color */
         transition: inherit;
         border-radius: 3px;
       }
@@ -157,5 +157,21 @@
   &__slogan:hover .slogan__text {
     color: #007bff;
     transition: color 0.3s ease;
+  }
+
+  /* Animated underline effect for brand logo */
+  &__brand__logo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+  }
+
+  &__brand__logo:hover::after {
+    width: 100%;
   }
 }
