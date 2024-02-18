@@ -1,12 +1,10 @@
 import { Fragment, useState } from "react";
 import { Navbar } from "@/container";
-import { useRouter } from "next/router";
-import { Loader } from "@/components";
+
 import Link from "next/link";
 
 function Layout({ children }) {
   const [showSidebar, setShowSidebar] = useState(false);
-  const [loading, setLoading] = useState(true); // Set loading to true initially
 
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
@@ -35,8 +33,7 @@ function Layout({ children }) {
 
       <div className={`mainContent ${showSidebar ? "shift" : ""}`}>
         <Navbar showsidebar={showSidebar} toggleSidebar={toggleSidebar} />
-        <Loader loading={loading} />{" "}
-        {/* Pass the loading state to the Loader component */}
+
         {children}
       </div>
     </Fragment>
