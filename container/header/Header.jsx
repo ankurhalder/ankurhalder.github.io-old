@@ -42,6 +42,13 @@ function Navbar({ showSidebar, toggleSidebar }) {
           Ankur Halder
         </a>
       </div>
+      <div className="navbar__slogan">
+        <p>
+          Passionate dev skilled in MERN stack, Django, Python, JavaScript,
+          DevOps, Next.js, and DSA. Committed to crafting efficient solutions &
+          open source contribution.
+        </p>
+      </div>
       <div
         className={`hamburgerMenu ${showSidebar ? "open" : ""}`}
         onClick={toggleSidebar}
