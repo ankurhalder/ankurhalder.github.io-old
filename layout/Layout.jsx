@@ -19,7 +19,6 @@ function Layout({ children }) {
     <Fragment>
       <div className={`sidebar ${showSidebar ? "show" : ""}`}>
         <ul>
-          {/* Mapping over the links array to render links */}
           {links.map((link, index) => (
             <li key={index}>
               <Link href={link.href}>{link.label}</Link>
