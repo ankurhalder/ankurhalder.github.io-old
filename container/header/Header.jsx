@@ -35,8 +35,8 @@ function Navbar({ showSidebar, toggleSidebar }) {
           className="brand__image"
           src="/Ankur_Halder.png"
           alt="Ankur-Halder"
-          width={20}
-          height={20}
+          width={605}
+          height={605}
         ></Image>
         <a className="brand__logo" onClick={() => delayedRouterPush("/")}>
           Ankur Halder
