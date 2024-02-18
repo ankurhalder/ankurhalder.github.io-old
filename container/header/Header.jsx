@@ -8,7 +8,7 @@ function Navbar({ showSidebar, toggleSidebar }) {
   const router = useRouter();
 
   const delayedRouterPush = (href) => {
-    const delay = 2000;
+    const delay = 2500;
     setLoading(true);
     setTimeout(() => {
       try {
