@@ -1,5 +1,5 @@
-$cyan: #007ae5; // Define the cyan color variable
-$tiles: 5; // Define the number of tiles variable
+$cyan: darken(#ffa544, 10%);
+$tiles: 5;
 
 .loader {
   $parent: &;
