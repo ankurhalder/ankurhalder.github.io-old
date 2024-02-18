@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Loader } from "@/components";
 
 function Navbar({ showSidebar, toggleSidebar }) {
+  const [activateSidebar, setActivateSidebar] = useState(false);
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
@@ -26,6 +27,11 @@ function Navbar({ showSidebar, toggleSidebar }) {
       toggleSidebar();
     }
   }, [router.pathname, showSidebar, toggleSidebar]);
+
+  function oneClickhandler() {
+    setActivateSidebar(!activateSidebar);
+    toggleSidebar();
+  }
 
   return (
     <nav className="navbar">
@@ -50,8 +56,8 @@ function Navbar({ showSidebar, toggleSidebar }) {
         </p>
       </div>
       <div
-        className={`hamburgerMenu ${showSidebar ? "open" : ""}`}
-        onClick={toggleSidebar}
+        className={`hamburgerMenu ${activateSidebar ? "open" : ""}`}
+        onClick={oneClickhandler}
       >
         <span></span>
         <span></span>
