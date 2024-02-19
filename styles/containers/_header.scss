@@ -23,12 +23,10 @@
     }
 
     .brand__logo {
-      font-size: 1.5rem;
-      font-weight: bold;
+      font-family: var(--font-moleth);
       color: var(--text-color);
-      text-decoration: none;
       position: relative;
-      transition: color 0.3s ease;
+      transition: color 0.3s ease-in-out;
 
       &:hover {
         color: #007bff;
