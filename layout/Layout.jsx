@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import { Navbar } from "@/container";
-
+import { CheckboxComponent } from "@/components";
 import Link from "next/link";
 
 function Layout({ children }) {
@@ -29,6 +29,7 @@ function Layout({ children }) {
             </li>
           ))}
         </ul>
+        <CheckboxComponent />
       </div>
 
       <div className={`mainContent ${showSidebar ? "shift" : ""}`}>
