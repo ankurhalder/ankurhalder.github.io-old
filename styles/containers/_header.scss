@@ -3,7 +3,7 @@
   padding: 1rem 0.5rem;
   background-color: var(--shade-4);
   color: var(--text-color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--shadow-1);
   z-index: 1000;
   &__brand {
     display: flex;
@@ -19,14 +19,14 @@
 
       &:hover {
         transform: translateY(-2px) scale(1.05);
-        box-shadow: 0 6px 10px rgba(255, 255, 255, 0.9);
+        box-shadow: 0 6px 10px var(--inverse-shadow-9);
       }
     }
 
     .brand__logo {
       font-size: 1.5rem;
       font-weight: bold;
-      color: #fff;
+      color: var(--text-color);
       text-decoration: none;
       position: relative;
       transition: color 0.3s ease;
