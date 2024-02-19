@@ -13,6 +13,17 @@
   --shade-10: #999;
   --shade-11: #aaa;
   --shade-12: #bbb;
+
+  --shadow-1: rgba(0, 0, 0, 0.1);
+  --shadow-2: rgba(0, 0, 0, 0.2);
+  --shadow-3: rgba(0, 0, 0, 0.3);
+  --shadow-4: rgba(0, 0, 0, 0.4);
+  --shadow-5: rgba(0, 0, 0, 0.5);
+  --shadow-6: rgba(0, 0, 0, 0.6);
+  --shadow-7: rgba(0, 0, 0, 0.7);
+  --shadow-8: rgba(0, 0, 0, 0.8);
+  --shadow-9: rgba(0, 0, 0, 0.9);
+  --shadow-10: rgba(0, 0, 0, 1);
 }
 
 .theme-dark {
@@ -30,4 +41,15 @@
   --shade-10: #8c8c8c;
   --shade-11: #808080;
   --shade-12: #737373;
+
+  --shadow-1: rgba(255, 255, 255, 0.1);
+  --shadow-2: rgba(255, 255, 255, 0.2);
+  --shadow-3: rgba(255, 255, 255, 0.3);
+  --shadow-4: rgba(255, 255, 255, 0.4);
+  --shadow-5: rgba(255, 255, 255, 0.5);
+  --shadow-6: rgba(255, 255, 255, 0.6);
+  --shadow-7: rgba(255, 255, 255, 0.7);
+  --shadow-8: rgba(255, 255, 255, 0.8);
+  --shadow-9: rgba(255, 255, 255, 0.9);
+  --shadow-10: rgba(255, 255, 255, 1);
 }
