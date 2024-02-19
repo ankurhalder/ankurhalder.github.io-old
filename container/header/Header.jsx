@@ -51,9 +51,11 @@ function Navbar({ showSidebar, toggleSidebar }) {
         </div>
         <div className="navbar__slogan">
           <p className="slogan__text">
-            Passionate dev skilled in MERN stack, Django, Python, JavaScript,
-            DevOps, Next.js, and DSA. Committed to crafting efficient solutions
-            & open source contribution.
+            MERN and NEXT.js dev | Python| JS | DevOps | Django | DSA |
+            Efficiency & open source.
+          </p>
+          <p className="slogan__text screen-1200">
+            Software & Full Stack Web Developer
           </p>
         </div>
         <div

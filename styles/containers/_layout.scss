@@ -7,7 +7,7 @@
   background-color: #333;
   overflow-x: hidden;
   padding-top: 60px;
-  transition: width 0.3s ease;
+  transition: width 0.3s ease, margin-left 0.3s ease;
 
   &.show {
     width: 250px;

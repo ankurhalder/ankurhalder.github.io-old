@@ -118,6 +118,7 @@
       @media (max-width: $breakpoint-desktop) {
       }
       @media (max-width: $breakpoint-large-tablet) {
+        display: none;
       }
       @media (max-width: $breakpoint-tablet) {
       }
@@ -152,14 +153,25 @@
       box-shadow: 0 0 5px rgba(26, 188, 156, 1);
     }
   }
-
+  .screen-1200 {
+    display: none;
+    @media (max-width: $breakpoint-desktop-wide) {
+    }
+    @media (max-width: $breakpoint-desktop) {
+    }
+    @media (max-width: $breakpoint-large-tablet) {
+      display: block;
+    }
+    @media (max-width: $breakpoint-tablet) {
+    }
+    @media (max-width: $breakpoint-phone) {
+    }
+  }
   .hamburgerMenu {
     .close-icon,
     .hamburger-icon {
-      height: 100%;
-      width: 100%;
-      max-height: 40px;
-      max-width: 40px;
+      height: 60px;
+      width: 60px;
       @media (max-width: $breakpoint-desktop-wide) {
       }
       @media (max-width: $breakpoint-desktop) {
