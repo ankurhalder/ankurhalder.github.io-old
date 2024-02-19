@@ -1,4 +1,5 @@
 .navbar {
+  transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   @include flex-container(row, nowrap, space-between, center);
   padding: 1rem 0.5rem;
   background-color: var(--shade-4);
@@ -6,9 +7,7 @@
   box-shadow: 0 2px 4px var(--shadow-1);
   z-index: 1000;
   &__brand {
-    display: flex;
-    align-items: center;
-
+    @include flex-container(row, nowrap, flex-start, center);
     .brand__image {
       width: 100%;
       height: 100%;
