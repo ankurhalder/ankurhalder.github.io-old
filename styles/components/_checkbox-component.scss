@@ -129,7 +129,7 @@
   to {
     box-shadow: 0 0.175em 0.175em 0 #0001 inset, 0 0.375em 0 #0002 inset,
       0 0.375em 0 var(--on) inset, 0 0.475em 0.1em #0001 inset;
-    left: 1.125em;
+    left: 1.125em; /* This value should be adjusted */
     width: 1em;
   }
 }
