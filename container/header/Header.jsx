@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { Loader } from "@/components";
@@ -34,50 +34,52 @@ function Navbar({ showSidebar, toggleSidebar }) {
   }
 
   return (
-    <nav className="navbar">
+    <Fragment>
       {loading && <Loader />}
-      <div className="navbar__brand">
-        <Image
-          className="brand__image"
-          src="/Ankur_Halder.png"
-          alt="Ankur-Halder"
-          width={605}
-          height={605}
-        ></Image>
-        <a className="brand__logo" onClick={() => delayedRouterPush("/")}>
-          Ankur Halder
-        </a>
-      </div>
-      <div className="navbar__slogan">
-        <p className="slogan__text">
-          Passionate dev skilled in MERN stack, Django, Python, JavaScript,
-          DevOps, Next.js, and DSA. Committed to crafting efficient solutions &
-          open source contribution.
-        </p>
-      </div>
-      <div
-        className={`hamburgerMenu ${activateSidebar ? "open" : ""}`}
-        onClick={oneClickhandler}
-      >
-        {activateSidebar ? (
+      <nav className="navbar">
+        <div className="navbar__brand">
           <Image
-            className="close-icon"
-            src="/navbar/close.gif"
-            alt="Close"
-            width={100}
-            height={100}
-          />
-        ) : (
-          <Image
-            className="hamburger-icon"
-            src="/navbar/hamburger.gif"
-            alt="Hamburger"
-            width={100}
-            height={100}
-          />
-        )}
-      </div>
-    </nav>
+            className="brand__image"
+            src="/Ankur_Halder.png"
+            alt="Ankur-Halder"
+            width={605}
+            height={605}
+          ></Image>
+          <a className="brand__logo" onClick={() => delayedRouterPush("/")}>
+            Ankur Halder
+          </a>
+        </div>
+        <div className="navbar__slogan">
+          <p className="slogan__text">
+            Passionate dev skilled in MERN stack, Django, Python, JavaScript,
+            DevOps, Next.js, and DSA. Committed to crafting efficient solutions
+            & open source contribution.
+          </p>
+        </div>
+        <div
+          className={`hamburgerMenu ${activateSidebar ? "open" : ""}`}
+          onClick={oneClickhandler}
+        >
+          {activateSidebar ? (
+            <Image
+              className="close-icon"
+              src="/navbar/close.gif"
+              alt="Close"
+              width={100}
+              height={100}
+            />
+          ) : (
+            <Image
+              className="hamburger-icon"
+              src="/navbar/hamburger.gif"
+              alt="Hamburger"
+              width={100}
+              height={100}
+            />
+          )}
+        </div>
+      </nav>
+    </Fragment>
   );
 }
 
