@@ -24,6 +24,9 @@
 
     .brand__logo {
       font-family: var(--font-moleth);
+      font-size: var(--font-8);
+      font-weight: 400;
+      letter-spacing: 2px;
       color: var(--text-color);
       position: relative;
       transition: color 0.3s ease-in-out;

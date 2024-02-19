@@ -36,7 +36,7 @@ function Navbar({ showSidebar, toggleSidebar }) {
   return (
     <Fragment>
       {loading && <Loader />}
-      <nav className="navbar">
+      <nav className="navbar none">
         <div className="navbar__brand">
           <Image
             className="brand__image"
