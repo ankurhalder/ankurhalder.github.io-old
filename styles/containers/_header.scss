@@ -1,8 +1,7 @@
 .navbar {
+  text-align: center;
   transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-container(row, nowrap, space-between, center);
   padding: 1rem 0.5rem;
   background-color: var(--shade-4);
   color: var(--text-color);
@@ -25,7 +24,6 @@
     }
 
     .brand__logo {
-      text-align: center;
       font-family: var(--font-moleth);
       font-size: var(--font-9);
       font-weight: 400;
@@ -66,7 +64,6 @@
   }
 
   &__slogan {
-    text-align: center;
     position: relative;
     .slogan__text {
       font-family: var(--font-rockyeah);
