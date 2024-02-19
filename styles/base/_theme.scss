@@ -1,0 +1,33 @@
+.theme-light {
+  --background-color: var(--white);
+  --text-color: var(--black);
+  --shade-1: var(--black);
+  --shade-2: #111;
+  --shade-3: #222;
+  --shade-4: #333;
+  --shade-5: #444;
+  --shade-6: #555;
+  --shade-7: #666;
+  --shade-8: #777;
+  --shade-9: #888;
+  --shade-10: #999;
+  --shade-11: #aaa;
+  --shade-12: #bbb;
+}
+
+.theme-dark {
+  --background-color: var(--black);
+  --text-color: var(--white);
+  --shade-1: var(--white);
+  --shade-2: #f0f0f0;
+  --shade-3: #e4e4e4;
+  --shade-4: #d1d1d1;
+  --shade-5: #ccc;
+  --shade-6: #c0c0c0;
+  --shade-7: #b3b3b3;
+  --shade-8: #a6a6a6;
+  --shade-9: #999;
+  --shade-10: #8c8c8c;
+  --shade-11: #808080;
+  --shade-12: #737373;
+}
