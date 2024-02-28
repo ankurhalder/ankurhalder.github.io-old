@@ -15,6 +15,7 @@ function CheckboxComponent() {
     document.body.classList.toggle("theme-dark");
     document.body.classList.toggle("theme-light");
   };
+  //
 
   return (
     <div className={`checkbox ${isChecked ? "checked" : ""}`}>
