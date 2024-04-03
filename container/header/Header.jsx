@@ -65,19 +65,19 @@ function Navbar({ showSidebar, toggleSidebar }) {
           {activateSidebar ? (
             <Image
               className="close-icon"
-              src="/navbar/close.gif"
+              src="/navbar/closev2.gif"
               alt="Close"
-              width={100}
-              height={100}
+              width={80}
+              height={80}
               unoptimized
             />
           ) : (
             <Image
               className="hamburger-icon"
-              src="/navbar/menu.gif"
+              src="/navbar/menuv2.gif"
               alt="Hamburger"
-              width={100}
-              height={100}
+              width={80}
+              height={80}
               unoptimized
             />
           )}
