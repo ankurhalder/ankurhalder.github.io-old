@@ -1,16 +1,26 @@
+// Layout.scss
+
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   width: 0;
-  background-color: #333;
+  background: linear-gradient(to bottom, #2c3e50, #4a6078);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow-x: hidden;
   padding-top: 60px;
   transition: width 0.3s ease, margin-left 0.3s ease;
 
   &.show {
     width: 250px;
+  }
+
+  .sidebar-header {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #34495e;
   }
 
   ul {
@@ -27,7 +37,7 @@
         transition: background-color 0.3s ease, color 0.3s ease;
 
         &:hover {
-          background-color: #555;
+          background-color: #4a6078;
           color: #ff8c00;
         }
       }
