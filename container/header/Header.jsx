@@ -73,7 +73,7 @@ function Navbar({ showSidebar, toggleSidebar }) {
           ) : (
             <Image
               className="hamburger-icon"
-              src="/navbar/hamburger.gif"
+              src="/navbar/menu.gif"
               alt="Hamburger"
               width={100}
               height={100}
