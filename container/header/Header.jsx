@@ -69,6 +69,7 @@ function Navbar({ showSidebar, toggleSidebar }) {
               alt="Close"
               width={100}
               height={100}
+              unoptimized
             />
           ) : (
             <Image
@@ -77,6 +78,7 @@ function Navbar({ showSidebar, toggleSidebar }) {
               alt="Hamburger"
               width={100}
               height={100}
+              unoptimized
             />
           )}
         </div>
